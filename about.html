@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Y Sharma MD Inc.</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #ffffff;
+        }
+
+        /* Color palette variables */
+        :root {
+            --primary-color: #4CAF50; /* Light green */
+            --secondary-color: #f5f5f5; /* Soft gray */
+            --accent-color: #e8f5e8; /* Lighter green */
+            --text-color: #333;
+            --white: #ffffff;
+        }
+
+        /* Header styles */
+        header {
+            background-color: var(--white);
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 1px solid var(--secondary-color);
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            display: inline-block;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .company-name {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #45a049;
+        }
+
+        /* Hero section */
+        .hero {
+            background-color: var(--accent-color);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--text-color);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Section styles */
+        section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: var(--primary-color);
+        }
+
+        /* Overview */
+        .overview p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Mission */
+        .mission p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* What We Do */
+        .what-we-do {
+            background-color: var(--secondary-color);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .service-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .service-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .service-card li {
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        /* Vision */
+        .vision p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--text-color);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .footer-content p {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            section {
+                padding: 2rem 1rem;
+            }
+
+            .company-name {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">YS</div>
+        <h1 class="company-name">Y Sharma MD Inc.</h1>
+        <nav>
+            <ul>
+                <li><a href="Index.html#home">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>About Us</h1>
+        <p>Advancing Healthcare and Education Through Innovation and AI</p>
+    </section>
+
+    <!-- Company Overview -->
+    <section class="overview">
+        <h2>Company Overview</h2>
+        <p>Y Sharma MD Inc. is an S-Corporation dedicated to delivering high-quality professional services across healthcare and education. Our mission is to leverage modern technologies, including Artificial Intelligence, to improve outcomes, enhance efficiency, and provide meaningful value to individuals and organizations.</p>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission">
+        <h2>Our Mission</h2>
+        <p>To integrate advanced technology and human expertise to deliver accessible, high-quality healthcare and educational services for individuals of all ages—from children to adults.</p>
+    </section>
+
+    <!-- What We Do -->
+    <section class="what-we-do">
+        <h2>What We Do</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Healthcare Services</h3>
+                <ul>
+                    <li>Patient-focused, technology-enabled care</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <h3>Educational Services</h3>
+                <ul>
+                    <li>Learning solutions for all age groups</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <h3>AI Integration</h3>
+                <ul>
+                    <li>Smart tools, automation, and data-driven decision making</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section class="vision">
+        <h2>Our Vision</h2>
+        <p>To be a leader in combining healthcare, education, and artificial intelligence to create smarter, more efficient, and more impactful service models.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2026 Y Sharma MD Inc. All rights reserved</p>
+            <p>Contact: info@ysharma-md.com</p>
+        </div>
+    </footer>
+</body>
+</html>
