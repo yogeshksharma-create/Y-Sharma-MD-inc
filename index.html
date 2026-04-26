@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Y Sharma MD Inc. - Professional Services</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #ffffff;
+        }
+
+        /* Color palette variables */
+        :root {
+            --primary-color: #4CAF50; /* Light green */
+            --secondary-color: #f5f5f5; /* Soft gray */
+            --accent-color: #e8f5e8; /* Lighter green */
+            --text-color: #333;
+            --white: #ffffff;
+        }
+
+        /* Header styles */
+        header {
+            background-color: var(--white);
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 1px solid var(--secondary-color);
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #45a049;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            display: inline-block;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .company-name {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: var(--text-color);
+            font-style: italic;
+        }
+
+        /* Hero section */
+        .hero {
+            background-color: var(--accent-color);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--text-color);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #45a049;
+        }
+
+        /* Section styles */
+        section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: var(--primary-color);
+        }
+
+        /* About Us */
+        .about p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Services */
+        .services {
+            background-color: var(--secondary-color);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .service-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .service-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .service-card li {
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        /* Why Choose Us */
+        .why-choose-us ul {
+            max-width: 600px;
+            margin: 0 auto;
+            list-style: none;
+            padding: 0;
+        }
+
+        .why-choose-us li {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        .why-choose-us li::before {
+            content: "✓";
+            color: var(--primary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--text-color);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .footer-content p {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            section {
+                padding: 2rem 1rem;
+            }
+
+            .company-name {
+                font-size: 2rem;
+            }
+
+            .tagline {
+                font-size: 1rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with logo and tagline -->
+    <header>
+        <div class="logo">YS</div>
+        <h1 class="company-name">Y Sharma MD Inc.</h1>
+        <p class="tagline">Innovating Professional, Healthcare, and Educational Services with AI</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Empowering Healthcare and Education Through Technology</h1>
+        <p>Delivering advanced professional services by integrating Artificial Intelligence to improve outcomes and user experience</p>
+        <button class="cta-button">Learn More</button>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>Y Sharma MD Inc. is an S-Corporation dedicated to providing exceptional professional services in healthcare and education. We focus on delivering patient-centered healthcare solutions, innovative educational programs for learners from children to adults, and cutting-edge professional services. Our commitment to innovation drives us to integrate Artificial Intelligence and modern technologies to enhance efficiency, outcomes, and user experiences across all our service areas.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Healthcare Services</h3>
+                <ul>
+                    <li>Patient-centered care</li>
+                    <li>Technology-driven solutions</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <h3>Educational Services</h3>
+                <ul>
+                    <li>Learning solutions for children through adults</li>
+                    <li>AI-enhanced education tools</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <h3>AI & Technology Integration</h3>
+                <ul>
+                    <li>Automation</li>
+                    <li>Intelligent workflows</li>
+                    <li>Data-driven insights</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us" id="why-choose-us">
+        <h2>Why Choose Us</h2>
+        <ul>
+            <li>AI-powered solutions</li>
+            <li>Efficient and scalable systems</li>
+            <li>Focus on quality and outcomes</li>
+            <li>Cross-functional expertise</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p><strong>Y Sharma MD Inc.</strong></p>
+            <p>© 2026 Y Sharma MD Inc. All rights reserved</p>
+
+            <p>Contact: yogiinnovations@gmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>
