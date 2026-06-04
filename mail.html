@@ -1,0 +1,31 @@
+<form onsubmit="handleSubmit(event)">
+  <input name="name" placeholder="Name" />
+  <input name="email" placeholder="Email" />
+  <input name="subject" placeholder="Subject" />
+  <textarea name="message" placeholder="Message"></textarea>
+
+  <button type="submit">Send</button>
+</form>
+
+<script>
+async function handleSubmit(e) {
+  e.preventDefault();
+
+  const form = e.target;
+
+  await fetch("https://learnatopia-email.yogeshksharma.workers.dev", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      name: form.name.value,
+      email: form.email.value,
+      subject: form.subject.value,
+      message: form.message.value
+    })
+  });
+
+  alert("Message sent!");
+}
+</script>
