@@ -79,7 +79,13 @@ button{
 <div id="editor"></div>
 
 <br>
+<label>Admin Password</label>
+<input
+  type="password"
+  id="adminPassword"
+  placeholder="Enter password">
 
+<br><br>
 <button type="submit">
 Send Email
 </button>
@@ -108,6 +114,7 @@ async function handleSubmit(event){
   event.preventDefault();
 
   const payload = {
+     password: document.getElementById('adminPassword').value,
     app: document.getElementById('app').value,
     type: document.getElementById('emailType').value,
     to: document.getElementById('to').value,
